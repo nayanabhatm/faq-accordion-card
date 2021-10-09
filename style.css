@@ -93,7 +93,7 @@ main {
     transform: translate(-10%, 0);
   }
 
-  .illustration-img {
+  /* .illustration-img {
     content: url(images/illustration-woman-online-desktop.svg);
     left: 140%;
     width: 30vw;
@@ -110,6 +110,22 @@ main {
     left: 27%;
     transform: translateX(0);
     object-position: center;
+  } */
+
+  .illustration-img {
+    position: relative;
+    top: 14rem;
+    left: 110%;
+    width: 30vw;
+    height: auto;
+  }
+
+  .background-pattern {
+    position: relative;
+    top: 5rem;
+    left: 108%;
+    width: 30vw;
+    height: auto;
   }
 
   /* main */
@@ -117,7 +133,7 @@ main {
   main {
     background-color: white;
     border-radius: 20px;
-    padding: 7% 4% 7% 30%;
+    padding: 7% 4% 7% 25%;
     width: 80%;
     margin: 5%;
   }
