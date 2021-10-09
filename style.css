@@ -1,0 +1,124 @@
+:root {
+  /* text */
+  --dark-blue: hsl(238, 29%, 16%);
+  --red: hsl(14, 88%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  /* Background gradient */
+  --violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /*Divider*/
+  --light-grayish-blue: hsl(240, 5%, 91%);
+  /* font-family */
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-image: linear-gradient(var(--violet), var(--soft-blue));
+  background-repeat: no-repeat;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* main */
+
+main {
+  background-color: white;
+  padding: 30% 4% 10% 4%;
+  border-radius: 20px;
+  margin: 5%;
+}
+
+.illustration-img {
+  position: relative;
+  top: 14rem;
+  left: 50%;
+  transform: translateX(-50%);
+  object-position: center;
+}
+
+.background-pattern {
+  position: relative;
+  top: 9rem;
+  left: 50%;
+  transform: translateX(-45%);
+  object-position: center;
+}
+
+/* faq */
+
+.label {
+  display: inline-block;
+  width: 90%;
+}
+
+.label:hover {
+  color: var(--red);
+}
+
+.content {
+  margin: 0;
+  display: none;
+}
+
+.faq1 img,
+.faq2 img,
+.faq3 img,
+.faq4 img,
+.faq5 img {
+  transform: rotate(0deg);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    position: relative;
+    transform: translate(-10%, 0);
+  }
+
+  .illustration-img {
+    content: url(images/illustration-woman-online-desktop.svg);
+    left: 140%;
+    width: 30vw;
+    height: auto;
+    position: relative;
+  }
+
+  .background-pattern {
+    content: url(images/bg-pattern-desktop.svg);
+    position: absolute;
+    width: 30vw;
+    top: 23%;
+    height: auto;
+    left: 27%;
+    transform: translateX(0);
+    object-position: center;
+  }
+
+  /* main */
+
+  main {
+    background-color: white;
+    border-radius: 20px;
+    padding: 7% 4% 7% 30%;
+    width: 80%;
+    margin: 5%;
+  }
+}
